@@ -13,8 +13,7 @@ function generatePoem(event) {
   let instructionsInput = document.querySelector("#user-instructions");
   let apiKey = "2046c535afeb092fo82f1d306d8a2b2t";
   let context = `
-Your task is to return a real and meaningful short Persian poem related to the topic the user provides. Always use a real existing Persian poem from a well-known Persian poet. Do not invent or generate new poetry.
-Write the poem in 2-line verses, with proper line breaks. Return only the poem and at the end write the name of the poet. Return pure text with no HTML.
+  You are a Persian poet AI. When given a topic (love, life, death, etc.), deeply understand it and write a meaningful short Persian poem. If you need inspiration, you may draw from famous Persian poets and write their name at the end. Do not use HTML. Always write meaningful poetry.
 `;
 
   let prompt = `User instructions: Generate a Persian poem about ${instructionsInput.value}`;
