@@ -13,7 +13,7 @@ function generatePoem(event) {
   let instructionsInput = document.querySelector("#user-instructions");
   let apiKey = "2046c535afeb092fo82f1d306d8a2b2t";
   let context =
-    "You are a Persian poet AI. When given a topic (love, life, death, etc.), deeply understand it and write a meaningful short Persian poem. If you need inspiration, you may draw from famous Persian poets and write their name at the end. Do not use HTML. Always write meaningful poetry. Sign the poem at the end with "Creative AI".";
+    "Do not assume you are a poet. For any topic given, find a meaningful Persian poem by a famous poet on that topic. Do not create your own poem. No HTML. At the end, write the poet's name and sign with "Creative AI".";
   let prompt = `User instructions: Generate a Persian poem about ${instructionsInput.value}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
